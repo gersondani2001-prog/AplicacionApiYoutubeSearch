@@ -1,0 +1,280 @@
+<!-- Codigo principal de la pagina web portada html5 -->
+<!DOCTYPE html>
+<!-- Lenguaje español guatemala html archivo codigo principal -->
+<html lang="es-GT" ng-app="app">
+<!-- Enlaces y Componentes -->
+<head>
+
+    <!-- jquery js -->
+    <script src="lib/jquery.js"></script>
+    <!-- caracteres especiales -->
+    <meta charset="UTF-8">
+    <!-- web responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compatibilidad con internet explore -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Descripcion -->
+    <meta name="description" content="Pagina Web componentes de bootstrap, angular, jquery, react y muchas cosas mas">
+    <!-- Nombre -->
+    <title>Templates Example</title>
+    <!-- Bootstrap enlace css -->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <!-- link de css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- link icono -->
+    <link rel="icon" href="img/icono.png">
+    <!-- iconos -->
+    <link rel="stylesheet" href="resources/iconos/fonts/style.css">
+
+</head>
+<!-- Cuerpo de la pagina web -->
+<body ng-controller="appCtrl">
+
+    <!-- codigo -->
+
+
+
+    <div class="container-fluid cont1">
+        <!-- fila 1 -->
+        <div class="row linea" >
+            <div class="col-lg-4 col-sm-4 col-sm-6 col-12 fila " ng-repeat="video in youtube">
+                <a href="https://www.youtube.com/watch?v={{video.data.items[0].id.videoId}}" target="_blank">
+                    <img ng-src="{{video.data.items[0].snippet.thumbnails.high.url}}" alt="videoYoutube" class="img">
+                </a>
+                <h1 class="h1text">
+                    {{ video.data.items[0].snippet.title }}
+                </h1>
+                <p class="ptext">
+                    Descripcion: {{ video.data.items[0].snippet.description }}
+                </p>
+                <p class="p2text">
+                    Fecha Publicada: {{ video.data.items[0].snippet.publishedAt }}
+                </p>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-sm-6 col-12 fila " ng-repeat="video in youtube">
+                <a href="https://www.youtube.com/watch?v={{video.data.items[1].id.videoId}}" target="_blank">
+                    <img ng-src="{{video.data.items[1].snippet.thumbnails.high.url}}" alt="videoYoutube" class="img">
+                </a>
+                <h1 class="h1text">
+                    {{ video.data.items[1].snippet.title }}
+                </h1>
+                <p class="ptext">
+                    Descripcion: {{ video.data.items[1].snippet.description }}
+                </p>
+                <p class="p2text">
+                    Fecha Publicada: {{ video.data.items[1].snippet.publishedAt }}
+                </p>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-sm-6 col-12 fila " ng-repeat="video in youtube">
+                <a href="https://www.youtube.com/watch?v={{video.data.items[2].id.videoId}}" target="_blank">
+                    <img ng-src="{{video.data.items[2].snippet.thumbnails.high.url}}" alt="videoYoutube" class="img">
+                </a>
+                <h1 class="h1text">
+                    {{ video.data.items[2].snippet.title }}
+                </h1>
+                <p class="ptext">
+                    Descripcion: {{ video.data.items[2].snippet.description }}
+                </p>
+                <p class="p2text">
+                    Fecha Publicada: {{ video.data.items[2].snippet.publishedAt }}
+                </p>
+            </div>
+        </div>
+        <!-- fila 2 -->
+        <div class="row linea" >
+            <div class="col-lg-4 col-sm-4 col-sm-6 col-12 fila " ng-repeat="video in youtube">
+                <a href="https://www.youtube.com/watch?v={{video.data.items[3].id.videoId}}" target="_blank">
+                    <img ng-src="{{video.data.items[3].snippet.thumbnails.high.url}}" alt="videoYoutube" class="img">
+                </a>
+                <h1 class="h1text">
+                    {{ video.data.items[3].snippet.title }}
+                </h1>
+                <p class="ptext">
+                    Descripcion: {{ video.data.items[3].snippet.description }}
+                </p>
+                <p class="p2text">
+                    Fecha Publicada: {{ video.data.items[3].snippet.publishedAt }}
+                </p>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-sm-6 col-12 fila " ng-repeat="video in youtube">
+                <a href="https://www.youtube.com/watch?v={{video.data.items[4].id.videoId}}" target="_blank">
+                    <img ng-src="{{video.data.items[4].snippet.thumbnails.high.url}}" alt="videoYoutube" class="img">
+                </a>
+                <h1 class="h1text">
+                    {{ video.data.items[4].snippet.title }}
+                </h1>
+                <p class="ptext">
+                    Descripcion: {{ video.data.items[4].snippet.description }}
+                </p>
+                <p class="p2text">
+                    Fecha Publicada: {{ video.data.items[4].snippet.publishedAt }}
+                </p>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-sm-6 col-12 fila " ng-repeat="video in youtube">
+                <a href="https://www.youtube.com/watch?v={{video.data.items[5].id.videoId}}" target="_blank">
+                    <img ng-src="{{video.data.items[5].snippet.thumbnails.high.url}}" alt="videoYoutube" class="img">
+                </a>
+                <h1 class="h1text">
+                    {{ video.data.items[5].snippet.title }}
+                </h1>
+                <p class="ptext">
+                    Descripcion: {{ video.data.items[5].snippet.description }}
+                </p>
+                <p class="p2text">
+                    Fecha Publicada: {{ video.data.items[5].snippet.publishedAt }}
+                </p>
+            </div>
+        </div>
+        <!-- fila 3 -->
+        <div class="row linea" >
+            <div class="col-lg-4 col-sm-4 col-sm-6 col-12 fila " ng-repeat="video in youtube">
+                <a href="https://www.youtube.com/watch?v={{video.data.items[6].id.videoId}}" target="_blank">
+                    <img ng-src="{{video.data.items[6].snippet.thumbnails.high.url}}" alt="videoYoutube" class="img">
+                </a>
+                <h1 class="h1text">
+                    {{ video.data.items[6].snippet.title }}
+                </h1>
+                <p class="ptext">
+                    Descripcion: {{ video.data.items[6].snippet.description }}
+                </p>
+                <p class="p2text">
+                    Fecha Publicada: {{ video.data.items[6].snippet.publishedAt }}
+                </p>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-sm-6 col-12 fila " ng-repeat="video in youtube">
+                <a href="https://www.youtube.com/watch?v={{video.data.items[7].id.videoId}}" target="_blank">
+                    <img ng-src="{{video.data.items[7].snippet.thumbnails.high.url}}" alt="videoYoutube" class="img">
+                </a>
+                <h1 class="h1text">
+                    {{ video.data.items[7].snippet.title }}
+                </h1>
+                <p class="ptext">
+                    Descripcion: {{ video.data.items[7].snippet.description }}
+                </p>
+                <p class="p2text">
+                    Fecha Publicada: {{ video.data.items[7].snippet.publishedAt }}
+                </p>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-sm-6 col-12 fila " ng-repeat="video in youtube">
+                <a href="https://www.youtube.com/watch?v={{video.data.items[8].id.videoId}}" target="_blank">
+                    <img ng-src="{{video.data.items[8].snippet.thumbnails.high.url}}" alt="videoYoutube" class="img">
+                </a>
+                <h1 class="h1text">
+                    {{ video.data.items[8].snippet.title }}
+                </h1>
+                <p class="ptext">
+                    Descripcion: {{ video.data.items[8].snippet.description }}
+                </p>
+                <p class="p2text">
+                    Fecha Publicada: {{ video.data.items[8].snippet.publishedAt }}
+                </p>
+            </div>
+        </div>
+        <!-- fila 4 -->
+        <div class="row linea" >
+            <div class="col-lg-4 col-sm-4 col-sm-6 col-12 fila " ng-repeat="video in youtube">
+                <a href="https://www.youtube.com/watch?v={{video.data.items[9].id.videoId}}" target="_blank">
+                    <img ng-src="{{video.data.items[9].snippet.thumbnails.high.url}}" alt="videoYoutube" class="img">
+                </a>
+                <h1 class="h1text">
+                    {{ video.data.items[9].snippet.title }}
+                </h1>
+                <p class="ptext">
+                    Descripcion: {{ video.data.items[9].snippet.description }}
+                </p>
+                <p class="p2text">
+                    Fecha Publicada: {{ video.data.items[9].snippet.publishedAt }}
+                </p>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-sm-6 col-12 fila " ng-repeat="video in youtube">
+                <a href="https://www.youtube.com/watch?v={{video.data.items[10].id.videoId}}" target="_blank">
+                    <img ng-src="{{video.data.items[10].snippet.thumbnails.high.url}}" alt="videoYoutube" class="img">
+                </a>
+                <h1 class="h1text">
+                    {{ video.data.items[10].snippet.title }}
+                </h1>
+                <p class="ptext">
+                    Descripcion: {{ video.data.items[10].snippet.description }}
+                </p>
+                <p class="p2text">
+                    Fecha Publicada: {{ video.data.items[10].snippet.publishedAt }}
+                </p>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-sm-6 col-12 fila " ng-repeat="video in youtube">
+                <a href="https://www.youtube.com/watch?v={{video.data.items[11].id.videoId}}" target="_blank">
+                    <img ng-src="{{video.data.items[11].snippet.thumbnails.high.url}}" alt="videoYoutube" class="img">
+                </a>
+                <h1 class="h1text">
+                    {{ video.data.items[11].snippet.title }}
+                </h1>
+                <p class="ptext">
+                    Descripcion: {{ video.data.items[11].snippet.description }}
+                </p>
+                <p class="p2text">
+                    Fecha Publicada: {{ video.data.items[11].snippet.publishedAt }}
+                </p>
+            </div>
+        </div>
+        <!-- fila 5 -->
+        <div class="row linea" >
+            <div class="col-lg-4 col-sm-4 col-sm-6 col-12 fila " ng-repeat="video in youtube">
+                <a href="https://www.youtube.com/watch?v={{video.data.items[12].id.videoId}}" target="_blank">
+                    <img ng-src="{{video.data.items[12].snippet.thumbnails.high.url}}" alt="videoYoutube" class="img">
+                </a>
+                <h1 class="h1text">
+                    {{ video.data.items[12].snippet.title }}
+                </h1>
+                <p class="ptext">
+                    Descripcion: {{ video.data.items[12].snippet.description }}
+                </p>
+                <p class="p2text">
+                    Fecha Publicada: {{ video.data.items[12].snippet.publishedAt }}
+                </p>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-sm-6 col-12 fila " ng-repeat="video in youtube">
+                <a href="https://www.youtube.com/watch?v={{video.data.items[13].id.videoId}}" target="_blank">
+                    <img ng-src="{{video.data.items[13].snippet.thumbnails.high.url}}" alt="videoYoutube" class="img">
+                </a>
+                <h1 class="h1text">
+                    {{ video.data.items[13].snippet.title }}
+                </h1>
+                <p class="ptext">
+                    Descripcion: {{ video.data.items[13].snippet.description }}
+                </p>
+                <p class="p2text">
+                    Fecha Publicada: {{ video.data.items[13].snippet.publishedAt }}
+                </p>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-sm-6 col-12 fila " ng-repeat="video in youtube">
+                <a href="https://www.youtube.com/watch?v={{video.data.items[14].id.videoId}}" target="_blank">
+                    <img ng-src="{{video.data.items[14].snippet.thumbnails.high.url}}" alt="videoYoutube" class="img">
+                </a>
+                <h1 class="h1text">
+                    {{ video.data.items[14].snippet.title }}
+                </h1>
+                <p class="ptext">
+                    Descripcion: {{ video.data.items[14].snippet.description }}
+                </p>
+                <p class="p2text">
+                    Fecha Publicada: {{ video.data.items[14].snippet.publishedAt }}
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Scripts librerias de js -->
+    <!-- Angular js -->
+    <script src="lib/angular.js"></script>
+    <!-- cdn de bootstrap js -->
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <!-- script de la pagina js principal -->
+    <script src="js/script.js"></script>  
+
+</body>
+</html>
+
+
+
+
+

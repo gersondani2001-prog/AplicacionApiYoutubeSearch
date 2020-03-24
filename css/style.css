@@ -1,0 +1,39 @@
+/*Codigo de estilo en css3 estilos en cascada*/
+
+/* body margin, padding y estilo de border */
+*, body{
+    /*  */
+    padding: 0 !important;
+    margin: 0 !important;
+    /* compatibilidad */
+    box-sizing: border-box;
+    /* edge - safari */
+    -webkit-box-sizing: border-box;
+    /*mozilla - firefox*/
+    -moz-box-sizing: border-box;
+    /*opera*/
+    -o-box-sizing: border-box;
+}
+/* codigo del contenedor */
+.h1text{
+    font-size: 18px !important;
+    font-weight: bold;
+}
+.ptext{
+    font-size: 15px;
+}
+.p2text{
+    font-size: 12px !important;
+    font-weight: bold;
+    letter-spacing: 2px !important;
+}
+.fila{
+    padding: 3% !important;
+}
+.img{
+    width: 350px;
+}
+
+
+
+
